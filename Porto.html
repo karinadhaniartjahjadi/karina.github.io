@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karina Dhaniar Tjahjadi | HR & People Strategy Portfolio</title>
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Custom Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#4A4E7C',      /* Dusty Indigo */
+                        'accent-peach': '#F2A9A0',  /* Blush Peach */
+                        'accent-rose': '#D98C9A',   /* Dusty Rose */
+                        'bg-light': '#FDF8F6',      /* Blush White */
+                        'dark-slate': '#2D3142',
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #FDF8F6;
+            color: #2D3142;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-accent-peach selection:text-white">
+
+    <!-- ================================================================= -->
+    <!-- NAVBAR                                                            -->
+    <!-- ================================================================= -->
+    <nav class="sticky top-0 z-50 bg-bg-light/90 backdrop-blur-md border-b border-primary/10 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Brand / Logo -->
+            <a href="#hero" class="text-xl font-bold tracking-tight text-primary hover:text-accent-rose transition-colors">
+                Karina Dhaniar Tj<span class="text-accent-rose">.</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-700">
+                <a href="#about" class="hover:text-primary transition-colors">About Me</a>
+                <a href="#experience" class="hover:text-primary transition-colors">Experience & Projects</a>
+                <a href="#skills" class="hover:text-primary transition-colors">Skills</a>
+                <a href="#contact" class="hover:text-primary transition-colors">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="menu-btn" class="md:hidden text-primary focus:outline-none text-2xl" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-bg-light border-b border-primary/10 px-6 py-4 space-y-3">
+            <a href="#about" class="block text-slate-700 hover:text-primary transition-colors">About Me</a>
+            <a href="#experience" class="block text-slate-700 hover:text-primary transition-colors">Experience & Projects</a>
+            <a href="#skills" class="block text-slate-700 hover:text-primary transition-colors">Skills</a>
+            <a href="#contact" class="block text-slate-700 hover:text-primary transition-colors">Contact</a>
+        </div>
+    </nav>
+
+
+    <!-- ================================================================= -->
+    <!-- HERO SECTION                                                      -->
+    <!-- ================================================================= -->
+    <section id="hero" class="min-h-[85vh] flex items-center justify-center px-6 py-12 relative overflow-hidden">
+        <!-- Background Accent Glow -->
+        <div class="absolute -top-20 -left-20 w-72 h-72 bg-accent-peach/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-10 right-0 w-80 h-80 bg-accent-rose/15 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto text-center z-10">
+            <span class="inline-block px-4 py-1.5 mb-6 text-xs font-semibold tracking-wider text-primary bg-primary/10 rounded-full uppercase">
+                Human Resources & Talent Acquisition Enthusiast
+            </span>
+            
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-primary leading-tight mb-6">
+                Where Psychology Meets <br class="hidden sm:inline"/>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent-rose to-accent-peach">People Strategy</span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto font-light leading-relaxed mb-10">
+                Fresh Graduate in Industrial & Organizational Psychology from Universitas Diponegoro, passionate about recruitment, talent development, and HR operations.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#experience" class="w-full sm:w-auto px-8 py-3.5 bg-primary text-white font-medium rounded-xl shadow-lg shadow-primary/25 hover:bg-primary/90 hover:-translate-y-0.5 transition-all duration-300 text-center">
+                    Lihat Portofolio Saya
+                </a>
+                <a href="#contact" class="w-full sm:w-auto px-8 py-3.5 bg-white text-primary border border-primary/20 font-medium rounded-xl hover:bg-primary/5 hover:-translate-y-0.5 transition-all duration-300 text-center">
+                    Hubungi Saya
+                </a>
+                <a href="CV.pdf" download class="w-full sm:w-auto px-8 py-3.5 bg-accent-rose text-white font-medium rounded-xl shadow-lg shadow-accent-rose/25 hover:bg-accent-rose/90 hover:-translate-y-0.5 transition-all duration-300 text-center flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-download"></i> Download CV
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================================================================= -->
+    <!-- ABOUT ME SECTION                                                  -->
+    <!-- ================================================================= -->
+    <section id="about" class="py-20 px-6 bg-white/50">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+                
+                <!-- Profile Image -->
+                <div class="md:col-span-5 flex justify-center">
+                    <div class="relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-accent-peach to-accent-rose rounded-2xl blur opacity-30 group-hover:opacity-75 transition duration-500"></div>
+                        <div class="relative w-64 h-80 sm:w-72 sm:h-96 rounded-2xl overflow-hidden border-2 border-white shadow-xl">
+                            <img src="Foto.jpg" alt="Karina Dhaniar Tjahjadi" class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="md:col-span-7 space-y-6">
+                    <div>
+                        <h2 class="text-3xl font-bold text-primary mb-2">About Me</h2>
+                        <div class="w-16 h-1 bg-accent-rose rounded-full"></div>
+                    </div>
+
+                    <p class="text-slate-600 leading-relaxed">
+                        Saya adalah lulusan Sarjana Psikologi dari <strong class="font-semibold text-primary">Universitas Diponegoro</strong> (GPA 3.47) dengan peminatan <strong class="font-semibold text-primary">Psikologi Industri dan Organisasi (PIO)</strong>. Memiliki ketertarikan mendalam pada strategi pengelolaan sumber daya manusia, proses rekrutmen, serta pengembangan talenta.
+                    </p>
+
+                    <p class="text-slate-600 leading-relaxed">
+                        Melalui pengalaman magang HR Operations di perusahaan FMCG/Distribution serta peran kepemimpinan sebagai Wakil Ketua Divisi Bendahara BEM, saya berpengalaman dalam melakukan <em class="italic">CV screening</em>, administrasi alat tes psikologi, koordinasi <em class="italic">interview</em>, <em class="italic">public speaking</em>, hingga pengelolaan anggaran operasional program.
+                    </p>
+
+                    <!-- Key Education & Background Highlights -->
+                    <div class="pt-2 grid grid-cols-2 gap-4">
+                        <div class="p-4 rounded-xl bg-bg-light border border-primary/10">
+                            <i class="fa-solid fa-graduation-cap text-accent-rose text-xl mb-2"></i>
+                            <h4 class="text-sm font-semibold text-primary">Pendidikan</h4>
+                            <p class="text-xs text-slate-500 mt-1">S1 Psikologi, Universitas Diponegoro (IPK: 3.47)</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-bg-light border border-primary/10">
+                            <i class="fa-solid fa-bullseye text-accent-rose text-xl mb-2"></i>
+                            <h4 class="text-sm font-semibold text-primary">Fokus Karir</h4>
+                            <p class="text-xs text-slate-500 mt-1">Human Resources, Talent Acquisition & Operations</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================================================================= -->
+    <!-- EXPERIENCE & PROJECTS SECTION                                     -->
+    <!-- ================================================================= -->
+    <section id="experience" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-primary mb-3">Experience & Projects</h2>
+                <div class="w-16 h-1 bg-accent-rose rounded-full mx-auto mb-4"></div>
+                <p class="text-slate-600">Jejak pengalaman profesional, kepemimpinan organisasi, dan kepanitiaan acara.</p>
+            </div>
+
+            <!-- Responsive Grid: 1 Col (Mobile), 3 Col (Desktop) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Card 1: HR Internship -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-xl border border-primary/10 transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 bg-primary/10 text-primary font-medium text-xs rounded-full">
+                                HR Internship
+                            </span>
+                            <span class="text-xs font-semibold text-slate-400">Mar 2025 - Mei 2025</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-primary mb-1">Human Resources Intern</h3>
+                        <p class="text-xs font-medium text-accent-rose mb-4">PT Unggul Adi Jaya (Getstok)</p>
+                        <ul class="text-sm text-slate-600 space-y-2 list-disc list-inside leading-relaxed mb-6">
+                            <li>Skrining 30+ CV kandidat posisi Sales & <em class="italic">sourcing</em> via sosmed/network.</li>
+                            <li>Mengatur & mengoordinasikan asesmen psikologi <em class="italic">online</em>.</li>
+                            <li>Jadwal wawancara & entri data hasil asesmen pada database rekrutmen.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 2: BEM Vice Head of Treasury -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-xl border border-primary/10 transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 bg-accent-rose/15 text-accent-rose font-medium text-xs rounded-full">
+                                Organisasi
+                            </span>
+                            <span class="text-xs font-semibold text-slate-400">2024</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-primary mb-1">Wakil Ketua Divisi Kebendaharaan</h3>
+                        <p class="text-xs font-medium text-accent-rose mb-4">BEM Fakultas Psikologi Undip</p>
+                        <ul class="text-sm text-slate-600 space-y-2 list-disc list-inside leading-relaxed mb-6">
+                            <li>Supervisi alur administrasi & penyusunan proposal anggaran seluruh proker BEM.</li>
+                            <li>Menyusun SOP manajemen keuangan & menyelenggarakan Pelatihan Administrasi.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 3: BEM Staff -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-xl border border-primary/10 transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 bg-accent-rose/15 text-accent-rose font-medium text-xs rounded-full">
+                                Organisasi
+                            </span>
+                            <span class="text-xs font-semibold text-slate-400">2023</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-primary mb-1">Staf Biro Administrasi</h3>
+                        <p class="text-xs font-medium text-accent-rose mb-4">BEM Fakultas Psikologi Undip</p>
+                        <ul class="text-sm text-slate-600 space-y-2 list-disc list-inside leading-relaxed mb-6">
+                            <li>Bendahara pelaksana beberapa program kerja BEM.</li>
+                            <li>Mengelola <em class="italic">cash flow</em> departemen KESMA (Kesejahteraan Mahasiswa) & membuat laporan keuangan bulanan.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 4: Event MC -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-xl border border-primary/10 transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 bg-accent-peach/25 text-slate-700 font-medium text-xs rounded-full">
+                                Event
+                            </span>
+                            <span class="text-xs font-semibold text-slate-400">2024</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-primary mb-1">Master of Ceremony (MC)</h3>
+                        <p class="text-xs font-medium text-accent-rose mb-4">Go Go UKMF 2024, Psikologi Undip</p>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-6">
+                            Memandu seluruh alur acara formal dan interaktif, serta berkoordinasi lintas divisi untuk memastikan kelancaran eksekusi acara.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 5: Food & Beverage Coordinator -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-xl border border-primary/10 transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 bg-accent-peach/25 text-slate-700 font-medium text-xs rounded-full">
+                                Event
+                            </span>
+                            <span class="text-xs font-semibold text-slate-400">2024</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-primary mb-1">Panitia Divisi Konsumsi</h3>
+                        <p class="text-xs font-medium text-accent-rose mb-4">OLIMDIPO 2024</p>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-6">
+                            Mengelola kebutuhan konsumsi untuk tamu VIP, panitia, dan peserta. Melakukan negosiasi vendor makanan & pengawasan distribusi harian.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 6: Beauty Class Organizer -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-xl border border-primary/10 transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 bg-accent-peach/25 text-slate-700 font-medium text-xs rounded-full">
+                                Event
+                            </span>
+                            <span class="text-xs font-semibold text-slate-400">2023</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-primary mb-1">Panitia Divisi Acara</h3>
+                        <p class="text-xs font-medium text-accent-rose mb-4">Beauty Class 2023, UKMF Independance</p>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-6">
+                            Merancang <em class="italic">rundown</em> dan konsep kegiatan workshop, serta berkolaborasi dengan tim lintas divisi untuk menyukseskan target peserta.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================================================================= -->
+    <!-- MY SKILLS SECTION                                                 -->
+    <!-- ================================================================= -->
+    <section id="skills" class="py-20 px-6 bg-white/50">
+        <div class="max-w-4xl mx-auto">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-primary mb-3">Skills & Proficiencies</h2>
+                <div class="w-16 h-1 bg-accent-rose rounded-full mx-auto mb-4"></div>
+                <p class="text-slate-600">Kombinasi kemampuan teknis & pemahaman perilaku untuk mendukung efektivitas HR.</p>
+            </div>
+
+            <div class="space-y-10">
+                <!-- Technical Skills -->
+                <div class="bg-bg-light p-8 rounded-2xl border border-primary/10">
+                    <h3 class="text-lg font-bold text-primary mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-laptop-code text-accent-rose"></i> Technical & Software Tools
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-white text-primary text-sm font-semibold rounded-xl border border-primary/10 shadow-sm hover:border-accent-rose transition-colors">
+                            <i class="fa-brands fa-microsoft text-blue-500 mr-2"></i>Microsoft Office
+                        </span>
+                        <span class="px-4 py-2 bg-white text-primary text-sm font-semibold rounded-xl border border-primary/10 shadow-sm hover:border-accent-rose transition-colors">
+                            <i class="fa-brands fa-google text-red-400 mr-2"></i>Google Workspace
+                        </span>
+                        <span class="px-4 py-2 bg-white text-primary text-sm font-semibold rounded-xl border border-primary/10 shadow-sm hover:border-accent-rose transition-colors">
+                            <i class="fa-solid fa-palette text-cyan-500 mr-2"></i>Canva
+                        </span>
+                        <span class="px-4 py-2 bg-white text-primary text-sm font-semibold rounded-xl border border-primary/10 shadow-sm hover:border-accent-rose transition-colors">
+                            <i class="fa-solid fa-chart-line text-emerald-500 mr-2"></i>JASP (Data Analysis)
+                        </span>
+                        <span class="px-4 py-2 bg-white text-primary text-sm font-semibold rounded-xl border border-primary/10 shadow-sm hover:border-accent-rose transition-colors">
+                            <i class="fa-solid fa-user-check text-purple-500 mr-2"></i>CV Screening & Sourcing
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="bg-bg-light p-8 rounded-2xl border border-primary/10">
+                    <h3 class="text-lg font-bold text-primary mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-people-group text-accent-rose"></i> Soft Skills & Competencies
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-white text-slate-700 text-sm font-medium rounded-xl border border-primary/10 shadow-sm hover:border-accent-rose transition-colors">
+                            Communication & Public Speaking
+                        </span>
+                        <span class="px-4 py-2 bg-white text-slate-700 text-sm font-medium rounded-xl border border-primary/10 shadow-sm hover:border-accent-rose transition-colors">
+                            Team Leadership
+                        </span>
+                        <span class="px-4 py-2 bg-white text-slate-700 text-sm font-medium rounded-xl border border-primary/10 shadow-sm hover:border-accent-rose transition-colors">
+                            Budget & Financial Management
+                        </span>
+                        <span class="px-4 py-2 bg-white text-slate-700 text-sm font-medium rounded-xl border border-primary/10 shadow-sm hover:border-accent-rose transition-colors">
+                            Time Management & Adaptability
+                        </span>
+                        <span class="px-4 py-2 bg-white text-slate-700 text-sm font-medium rounded-xl border border-primary/10 shadow-sm hover:border-accent-rose transition-colors">
+                            Proactivity & Analytical
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================================================================= -->
+    <!-- CONTACT SECTION                                                   -->
+    <!-- ================================================================= -->
+    <section id="contact" class="py-20 px-6">
+        <div class="max-w-4xl mx-auto">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-3">Get In Touch</h2>
+                <div class="w-16 h-1 bg-accent-rose rounded-full mx-auto mb-4"></div>
+                <p class="text-slate-600">Terbuka untuk kesempatan karir full-time atau kolaborasi di bidang HR & Talent Acquisition.</p>
+                <a href="CV.pdf" download class="inline-flex items-center gap-2 mt-6 px-6 py-3 bg-primary text-white font-medium rounded-xl shadow-lg shadow-primary/25 hover:bg-primary/90 hover:-translate-y-0.5 transition-all duration-300">
+                    <i class="fa-solid fa-download"></i> Download CV
+                </a>
+            </div>
+
+            <!-- Contact Information Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                
+                <a href="mailto:karinadhaniartjahjadi@gmail.com" class="p-6 bg-white rounded-2xl shadow-sm border border-primary/10 hover:border-accent-rose hover:shadow-md transition-all duration-300 flex items-center space-x-4 group">
+                    <div class="p-4 bg-primary/10 text-primary rounded-xl group-hover:bg-accent-rose group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-envelope text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xs text-slate-400 font-semibold uppercase">Email</h4>
+                        <span class="text-sm font-medium text-primary group-hover:text-accent-rose transition-colors break-all">
+                            karinadhaniartjahjadi@gmail.com
+                        </span>
+                    </div>
+                </a>
+
+                <a href="tel:+6281310443560" class="p-6 bg-white rounded-2xl shadow-sm border border-primary/10 hover:border-accent-rose hover:shadow-md transition-all duration-300 flex items-center space-x-4 group">
+                    <div class="p-4 bg-primary/10 text-primary rounded-xl group-hover:bg-accent-rose group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-phone text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xs text-slate-400 font-semibold uppercase">Telepon / WhatsApp</h4>
+                        <span class="text-sm font-medium text-primary group-hover:text-accent-rose transition-colors">
+                            +62 813-1044-3560
+                        </span>
+                    </div>
+                </a>
+
+                <a href="https://linkedin.com/in/karinadhaniartjahjadi" target="_blank" class="p-6 bg-white rounded-2xl shadow-sm border border-primary/10 hover:border-accent-rose hover:shadow-md transition-all duration-300 flex items-center space-x-4 group">
+                    <div class="p-4 bg-primary/10 text-primary rounded-xl group-hover:bg-accent-rose group-hover:text-white transition-colors">
+                        <i class="fa-brands fa-linkedin-in text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xs text-slate-400 font-semibold uppercase">LinkedIn</h4>
+                        <span class="text-sm font-medium text-primary group-hover:text-accent-rose transition-colors">
+                            karinadhaniartjahjadi
+                        </span>
+                    </div>
+                </a>
+
+                <div class="p-6 bg-white rounded-2xl shadow-sm border border-primary/10 flex items-center space-x-4">
+                    <div class="p-4 bg-primary/10 text-primary rounded-xl">
+                        <i class="fa-solid fa-location-dot text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xs text-slate-400 font-semibold uppercase">Lokasi</h4>
+                        <p class="text-sm font-medium text-primary">Tangerang, Indonesia</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================================================================= -->
+    <!-- FOOTER                                                            -->
+    <!-- ================================================================= -->
+    <footer class="py-8 bg-white border-t border-primary/10">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+            <p>&copy; 2026 Karina Dhaniar Tjahjadi. All rights reserved.</p>
+            <div class="flex space-x-4">
+                <a href="https://linkedin.com/in/karinadhaniartjahjadi" target="_blank" class="hover:text-primary transition-colors" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin text-base"></i>
+                </a>
+                <a href="mailto:karinadhaniartjahjadi@gmail.com" class="hover:text-primary transition-colors" aria-label="Email">
+                    <i class="fa-solid fa-envelope text-base"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- ================================================================= -->
+    <!-- JAVASCRIPT                                                        -->
+    <!-- ================================================================= -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close menu when clicking links on mobile
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
